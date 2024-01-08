@@ -1,82 +1,19 @@
-//print command
-console.log("haii");
-// variables
-a=10;  //non declared variabls
-console.log(a);
-var a=10  //variable declaration
-console.log(a);
-{
-var a=90;
-console.log(a);
-}
-console.log(a);
-var a=23;
-console.log(a);
-let b=44
-console.log(b);
-b=50;
-console.log(b);
-//data type
-console.log(typeof(b));
-let firstName='aswathy';
-console.log(typeof(firstName));
+let arr=[1,2,5,8,9]
 
-let isAvilable=true;
-console.log(typeof(isAvilable));
-
-let u;
-console.log(typeof(u));
-
-//objects
-let person={
-    name:"aswathy",
-    age:24,
-    place:'tsr'
-}
-console.log(person.age)
-//different keywords in one object 'car'
-let car=new Object();
-car.brand='maruthi';
-car.color='black';
-car.model=123;
-console.log(car);
-
-//array of objects
-let arr_obj=[{name:'aswathy',location:'kochi'},{name:'krishna',location:'tsr'}];
-console.log(arr_obj[1].location);
-
-//operators
-let vb=32;
-console.log(vb=vb+32);
-
-//Increment operators
-let Increment=6
-let Increment1=++Increment;
-console.log(Increment1);
-
-//conditional statements
-if (Increment===Increment1) {
-    console.log("The values are equal")
-} else {
-    console.log("The values are not equal")
-    
-}
-let num1=43
-let num2=34
-if (num1==num2) {
-    console.log('both are equal');  
-} else if (num1<num2){
-console.log('num2 is greaterthan num1')
-}else{
-    console.log('num2 is lessthan num1')
+for (let i = 0; i <=arr.length; i++) {
+    let element = arr[i];
+    console.log(element)
 }
 
-// function declaration
-function addval(ad1,ad2) {
-var sum=ad1+ad2;
-console.log(sum);
+let person= { name:'aswathy', age:14, place:'tsr'}
+for(x in person){
+    console.log(person[x]);
+
 }
-addval(10,20);  // function call
 
-
-
+let arr2=[1,2,3,4,5,6];
+let j=0;
+while(j<arr2.length){
+    console.log(arr2[j]);
+    j++
+}
